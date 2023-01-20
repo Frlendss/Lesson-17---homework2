@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid; */
+  justify-content: center;
+}
+.wrapper__item {
+  width: 300px;
+  height: 300px;
+  border: 4px solid rgb(179, 119, 7);
+  border-radius: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 7px;
+}
+.wrapper__item-item1 {
+  width: 180px;
+  height: 180px;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: orange;
+  border-radius: 100%;
+  animation-duration: 3s;
+  animation-name: circle;
+  animation-timing-function: linear;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes circle {
+  0% {
+    transform: translate(0, 0);
+  }
+  1% {
+    transform: translate(10px, 0);
+  }
+  2% {
+    transform: translate(10px, 5px);
+  }
+  3% {
+    transform: translate(20px, 5px);
+  }
+  4% {
+    transform: translate(20px, 10px);
+  }
+  5% {
+    transform: translate(30px, 10px);
+  }
+  6% {
+    transform: translate(30px, 15px);
+  }
+  7% {
+    transform: translate(30px, 15px);
+  }
+  8% {
+    transform: translate(30px, 20px);
+  }
+  9% {
+    transform: translate(30px, 20px);
+  }
+  10% {
+    transform: translate(30px, 25px);
+  }
+  11% {
+    transform: translate(40px, 30px);
+  }
+  12% {
+    transform: translate(40px, 35px);
+  }
+  13% {
+    transform: translate(40px, 40px);
+  }
+  14% {
+    transform: translate(40px, 45px);
+  }
+  15% {
+    transform: translate(40px, 50px);
+  }
+  16% {
+    transform: translate(40px, 55px);
+  }
+  17% {
+    transform: translate(40px, 60px);
+  }
+  18% {
+    transform: translate(40px, 65px);
+  }
+  19% {
+    transform: translate(35px, 70px);
+  }
+  20% {
+    transform: translate(35px, 75px);
+  }
+  21% {
+    transform: translate(35px, 80px);
+  }
+  22% {
+    transform: translate(35px, 80px);
+  }
+  23% {
+    transform: translate(30px, 85px);
+  }
+  24% {
+    transform: translate(25px, 90px);
+  }
+  25% {
+    transform: translate(25px, 90px);
+  }
+  26% {
+    transform: translate(25px, 90px);
+  }
+  27% {
+    transform: translate(25px, 95px);
+  }
+  28% {
+    transform: translate(20px, 95px);
+  }
+  30% {
+    transform: translate(20px, 90px);
+  }
+  31% {
+    transform: translate(15px, 100px);
+  }
+  32% {
+    transform: translate(15px, 95px);
+  }
+  33% {
+    transform: translate(10px, 100px);
+  }
+  34% {
+    transform: translate(5px, 100px);
+  }
+  35% {
+    transform: translate(0, 100px);
+  }
+  36% {
+    transform: translate(-5px, 95px);
+  }
+  37% {
+    transform: translate(-15px, 90px);
+  }
+  38% {
+    transform: translate(-20px, 90px);
+  }
+  39% {
+    transform: translate(-20px, 85px);
+  }
+  40% {
+    transform: translate(-35px, 80px);
+  }
+  41% {
+    transform: translate(-35px, 75px);
+  }
+  42% {
+    transform: translate(-40px, 70px);
+  }
+  43% {
+    transform: translate(-40px, 65px);
+  }
+  44% {
+    transform: translate(-40px, 60px);
+  }
+  45% {
+    transform: translate(-40px, 55px);
+  }
+  46% {
+    transform: translate(-45px, 50px);
+  }
+  47% {
+    transform: translate(-35px, 45px);
+  }
+  48% {
+    transform: translate(-35px, 40px);
+  }
+  49% {
+    transform: translate(-30px, 35px);
+  }
+  50% {
+    transform: translate(-30px, 30px);
+  }
+  51% {
+    transform: translate(-20px, 25px);
+  }
+  52% {
+    transform: translate(-20px, 20px);
+  }
+  53% {
+    transform: translate(-20px, 20px);
+  }
+  54% {
+    transform: translate(-20px, 15px);
+  }
+  55% {
+    transform: translate(-15px, 15px);
+  }
+  56% {
+    transform: translate(-15px, 10px);
+  }
+  57% {
+    transform: translate(-10px, 10px);
+  }
+  58% {
+    transform: translate(-10px, 5px);
+  }
+  59% {
+    transform: translate(-5px, 5px);
+  }
+  60% {
+    transform: translate(-5px, 0);
+  }
+  65% {
+    transform: translate(0, 0);
+  }
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.loading {
+  display: flex;
+  gap: 15px;
+}
+.item {
+  width: 5px;
+  height: 60px;
+  animation-name: loadings;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  background-color: green;
+}
+@keyframes loadings {
+  from {
+    background: yellow;
+    transform: scaleY(2);
+  }
+  to {
+    background: green;
+    transform: scaleY(1);
+  }
+}
+.item2 {
+  animation-delay: 0.05s;
+}
+.item3 {
+  animation-delay: 0.1s;
+}
+.item4 {
+  animation-delay: 0.15s;
+}
+.item5 {
+  animation-delay: 0.2s;
+}
+.item6 {
+  animation-delay: 0.25s;
+}
+.item7 {
+  animation-delay: 0.3s;
+}
+.item8 {
+  animation-delay: 0.35s;
+}
+.item9 {
+  animation-delay: 0.4s;
+}
+.item10 {
+  animation-delay: 0.45s;
+}
+.item11 {
+  animation-delay: 0.5s;
+}
+.item12 {
+  animation-delay: 0.6s;
+}
